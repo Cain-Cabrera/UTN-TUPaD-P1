@@ -1,3 +1,4 @@
+import random
 """ 1) Crea un programa que imprima en pantalla todos los números enteros desde 0 hasta 100
 (incluyendo ambos extremos), en orden creciente, mostrando un número por línea. 
 
@@ -58,7 +59,7 @@ while num_usuario != 0:
         num_usuario = int(input("Ingrese numeros enteros: "))
 print(f"La suma acumulada es: {contador}")
 
-#----------------------------------------------------------------------------------------->
+# #----------------------------------------------------------------------------------------->
 
 """ 5) Crea un juego en el que el usuario deba adivinar un número aleatorio entre 0 y 9. Al final, el
 programa debe mostrar cuántos intentos fueron necesarios para acertar el número.
@@ -69,7 +70,7 @@ print("El juego consiste en adivinar un numero, entre el 0 y el 9 inclusive..")
 
 numero_usuario = int(input("Ingrese su numero: "))
 cont = 1
-numero_correcto = 8
+numero_correcto = random.randint(0,9)
 if (numero_usuario > 0) and (numero_usuario >= 0 and numero_usuario <= 9):
     while numero_usuario != numero_correcto:
         numero_usuario = int(input("Ingrese su numero: "))
