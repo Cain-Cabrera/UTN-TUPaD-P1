@@ -6,9 +6,9 @@ deberá mostrar un mensaje en pantalla que diga “Es mayor de edad”.
 """
 edad_usuario = int(input("Ingrese su edad: ")) 
 if edad_usuario >= 18:
-    print("Es mayor de edad")
+        print("Es mayor de edad")
 else:
-    print("Es menor de edad, no ingresa..")
+        print("Es menor de edad, no ingresa..")
 # ------------------------------------------------------------------------------>
 """
 2) Escribir un programa que solicite su nota al usuario. Si la nota es mayor o igual a 6, deberá
@@ -17,9 +17,9 @@ mensaje “Desaprobado”.
 """
 nota_usuario = int(input("Ingrese la nota de su ultimo parcial: "))
 if nota_usuario >= 6:
-    print("Aprobado")
+        print("Aprobado")
 else:
-    print("Desaprobado")
+        print("Desaprobado")
 
 
 # ------------------------------------------------------------------------------>
@@ -48,13 +48,13 @@ siguientes categorías pertenece:
 
 edad_usuario = int(input("Ingrese su edad: "))
 if edad_usuario < 12:
-    print("Niño/a")
+        print("Niño/a")
 elif edad_usuario >= 12 and edad_usuario < 18:
-    print("Adolescente")
+        print("Adolescente")
 elif edad_usuario >= 18 and edad_usuario < 30:
-    print("Adulto/a")
+        print("Adulto/a")
 else:
-    print("Adulto/a")
+        print("Adulto/a")
 
 # ------------------------------------------------------------------------------>
 
@@ -68,9 +68,9 @@ como una lista o un string.
 
 password = input("Ingrese la contraseña: ")
 if len(password) >= 8 and len(password) <= 14:
-    print("Contraseña correcta")
+        print("Contraseña correcta")
 else:
-    print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres.")
+        print("Por favor, ingrese una contraseña de entre 8 y 14 caracteres.")
 
 # ------------------------------------------------------------------------------>
 
@@ -99,11 +99,11 @@ mediana = median(numeros_aleatorios)
 media = mean(numeros_aleatorios)
 
 if media > mediana and mediana > moda:
-    print("Sesgo positivo")
+        print("Sesgo positivo")
 elif media < mediana and mediana < moda:
-    print("Sesgo negativo")
+        print("Sesgo negativo")
 else:
-    if media == mediana and moda:
+        if media == mediana and moda:
         print("No hay sesgo")
 
 # ------------------------------------------------------------------------------>
@@ -138,17 +138,17 @@ lower() y title() de Python para convertir entre mayúsculas y minúsculas.
 nombre = input("Ingrese su nombre: ")
 opcion = input(f"\n '1' --> Si quiere su nombre en mayúsculas \n '2' --> Si quiere su nombre en minúsculas / \n '3' --> Si quiere su nombre con la primera letra mayúscula \n -->  ") 
 match opcion:
-    case "1":
-        nombre = nombre.lower()
-        print(nombre)
+        case "1":
+                nombre = nombre.lower()
+                print(nombre)
+                
+        case "2":
+                nombre = nombre.upper()
+                print(nombre)
         
-    case "2":
-        nombre = nombre.upper()
-        print(nombre)
-        
-    case "3":
-        nombre = nombre.title()
-        print(nombre)
+        case "3":
+                nombre = nombre.title()
+                print(nombre)
 
 
 # ------------------------------------------------------------------------------>
@@ -177,11 +177,11 @@ elif terremoto >= 3 and terremoto < 4:
 elif terremoto >= 4 and terremoto < 5:
         print("Moderado (sentido por personas, perp generalmente no causa daños)")
 elif terremoto >= 5 and terremoto < 6:
-      print("Fuerte (puede causar daños en estructuras debiles")
+        print("Fuerte (puede causar daños en estructuras debiles")
 elif terremoto >= 6 and terremoto < 7:
-      print("Muy fuerte (puede causar daños significativos). ")
+        print("Muy fuerte (puede causar daños significativos). ")
 else:
-      print("Extremo (puede causar graves daños a gran escala)")
+        print("Extremo (puede causar graves daños a gran escala)")
 
 
 # ------------------------------------------------------------------------------>
@@ -208,7 +208,6 @@ if hemisferio == "n":
                         print("invierno")
                 elif dia >= 21 and dia <= 31:
                         print("Primavera")
-                       
         elif mes == "junio":
                 if dia >= 1 and dia <= 20:
                         print("Primavera")
@@ -233,7 +232,6 @@ elif hemisferio == "s":
                         print("Verano")
                 elif dia >= 21 and dia <= 31:
                         print("Otoño")
-                       
         elif mes == "junio":
                 if dia >= 1 and dia <= 20:
                         print("Otoño")
