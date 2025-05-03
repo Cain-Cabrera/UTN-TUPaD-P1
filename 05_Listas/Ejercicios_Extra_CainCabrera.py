@@ -19,10 +19,10 @@ print(lista_cuadrado)
 """ Ejercicio_2) A partir de una lista, guarda solamente los numeros mayores a 10.
 """
 
-# lista_numeros = [1,2,8,5,20,10,2,46,8,100,70,23]
-# lista_mayores_a_10 = [i for i in lista_numeros if i > 10]
-# print(lista_mayores_a_10)
-# print(lista_numeros)
+lista_numeros = [1,2,8,5,20,10,2,46,8,100,70,23]
+lista_mayores_a_10 = [i for i in lista_numeros if i > 10]
+print(lista_mayores_a_10)
+print(lista_numeros)
 
 # --------------------------------------------------->
 
